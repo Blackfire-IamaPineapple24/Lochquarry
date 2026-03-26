@@ -5,11 +5,59 @@
         <title> Lochquarry Activity Centre </title>
         <link rel="icon" href="resources/images/favicon.ico">
         <link rel="stylesheet" href="resources/style.css">
-        <link rel="script" href="resources/script.js">
+        <script src="resources/script.js"></script>
     </head>
     <body>
+        <button id="light-toggle-button" onclick="ToggleLightMode();" class="ldm-button"> Light Mode </button>
         <div class="container">
-            <p> I AM IN A CONTAINER </p>
+            <div class="content">
+                <div class="navigation-tabs">
+                    <!-- Logo -->
+                    <img src="resources/images/logo.png" height="100px" style="margin-left: 16px; margin-top: 16px; user-select: none;">
+                    <!-- Buttons -->
+                    <button class="tab-button" onClick="document.location='/rope/index.html'"> Rope Activities </button> <!-- Putting the other pages in the index of individual folders means the browser's URL bar doesn't show ".html" on the end. -->
+                    <button class="tab-button" onClick="document.location='/water/index.html'"> Water Activities </button>
+                    <button class="tab-button" onClick="document.location='/land/index.html'"> Land Activities </button>
+                    <button class="tab-button" onClick="document.location='/info/index.html'"> Information </button>
+                    <button class="tab-button" onClick="document.location='/'"> Home </button>
+                </div>
+                <div class="main-content">
+                    <br style="margin-top: 128px;">
+                    <h4> Welcome to </h4>
+                    <h1> Lochquarry Activity Centre </h1>
+                    <br>
+
+                    <h4 style="margin-top: 16px;"> Here are some reviews from our happy customers: </h4>
+                    <br>
+
+                    <h3> 8th Gourock Guides </h3>
+                    <p> "We had a great time and loved all the different activities that we did." </p>
+                    <br>
+
+                    <h3> Martin Bainbridge, Scout Leader </h3>
+                    <p> "The Scouts loved every second of it, espcially the powerboating." </p>
+                    <br>
+
+                    <h3> Mrs. Kahn, Hillend Primary School </h3>
+                    <p> "Thank you to all the staff who worked so hard, in awful weather, to make sure that all the pupils had an amazing experience." </p>
+                    <br>
+
+                    <h3> Joe, Aged 14 </h3>
+                    <p> "Five stars, it was great." </p>
+                    <br>
+
+                    <h3> Sophie, Aged 10 </h3>
+                    <p> "I was really scared about the abseiling but the instructor Mike was really encouraging and helped me to do it, thanks Mike." </p> <!-- Mr. Ehrmantraut is great with kids! -->
+                    <br>
+
+                    <h3> Scott, Aged 13 </h3>
+                    <p> "The archery was brilliant, but not as good as axe throwing, I never thought we'd be allowed to do that! I got one of my axes right in the middle of the target." </p>
+                    <br>
+
+                    <h3> Mr. Evans, P.E. Teacher </h3>
+                    <p> "The kids had a ball and didn't want to leave." </p>
+                </div>
+            </div>
         </div>
     </body>
 </html>
