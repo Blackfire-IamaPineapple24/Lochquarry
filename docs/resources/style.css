@@ -31,6 +31,12 @@ h1, h2, h3, h4, h5, h6
 {
     margin: 0;
 }
+
+img
+{
+    user-select: none;
+    pointer-events: none;
+}
 /* #endregion */
 
 /* #region CLASSES */
@@ -39,7 +45,7 @@ h1, h2, h3, h4, h5, h6
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     width: 65%;
-    height: 100vh;
+    height: 0px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -107,6 +113,40 @@ h1, h2, h3, h4, h5, h6
     margin-left: 20px;
     margin-right: 6%;
 }
+
+.circle-image
+{
+    border-radius: 50%;
+}
+
+.side-button
+{
+    border-radius: 0;
+    border-width: 0px;
+    background-color: rgba(64, 78, 114, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-right: 16px;
+    margin-top: 32px;
+    height: 64px;
+    width: 128px;
+    font-size: 16pt;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+.side-button:hover
+{
+    background-color: rgba(94, 105, 189, 1);
+}
+.side-button:active
+{
+    background-color: rgba(70, 78, 141, 1);
+}
+
+.sidebar
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+}
 /* #endregion */
 
 /* #region CLASSES / LIGHT */
@@ -133,5 +173,11 @@ body.light-mode .ldm-button:hover
 body.light-mode .ldm-button:active
 {
     background-color: rgba(50, 50, 50, 0.8);
+}
+
+body.light-mode .sidebar
+{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
 }
 /* #endregion */

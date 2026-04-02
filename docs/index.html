@@ -6,6 +6,12 @@
         <link rel="icon" href="resources/images/favicon.ico">
         <link rel="stylesheet" href="resources/style.css">
         <script src="resources/script.js"></script>
+        <style>
+            .container
+            {
+                height: 1080px;
+            }
+        </style>
     </head>
     <body>
         <button id="light-toggle-button" onclick="ToggleLightMode();" class="ldm-button"> Light Mode </button>
@@ -13,7 +19,7 @@
             <div class="content">
                 <div class="navigation-tabs">
                     <!-- Logo -->
-                    <img src="resources/images/logo.png" height="100px" style="margin-left: 16px; margin-top: 16px; user-select: none;">
+                    <img src="resources/images/logo.png" height="100px" style="margin-left: 16px; margin-top: 16px;">
                     <!-- Buttons -->
                     <button class="tab-button" onClick="document.location='/rope/index.html'"> Rope Activities </button> <!-- Putting the other pages in the index of individual folders means the browser's URL bar doesn't show ".html" on the end. -->
                     <button class="tab-button" onClick="document.location='/water/index.html'"> Water Activities </button>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en-GB">
+        <title> Land Activities - Lochquarry Activity Centre </title>
+        <link rel="icon" href="/resources/images/favicon.ico">
+        <link rel="stylesheet" href="/resources/style.css">
+        <script src="/resources/script.js"></script>
+        <style>
+            .container
+            {
+                height: 1500px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="light-toggle-button" onclick="ToggleLightMode();" class="ldm-button"> Light Mode </button>
+        <div class="container">
+            <div class="content">
+                <div class="navigation-tabs">
+                    <!-- Logo -->
+                    <img src="/resources/images/logo.png" height="100px" style="margin-left: 16px; margin-top: 16px;">
+                    <!-- Buttons -->
+                    <button class="tab-button" onClick="document.location='/rope/index.html'"> Rope Activities </button> <!-- Putting the other pages in the index of individual folders means the browser's URL bar doesn't show ".html" on the end. -->
+                    <button class="tab-button" onClick="document.location='/water/index.html'"> Water Activities </button>
+                    <button class="tab-button" onClick="document.location='/land/index.html'"> Land Activities </button>
+                    <button class="tab-button" onClick="document.location='/info/index.html'"> Information </button>
+                    <button class="tab-button" onClick="document.location='/'"> Home </button>
+                </div>
+                <div class="main-content">
+                    <br style="margin-top: 128px;">
+
+                    <div class="sidebar">
+                        <button class="side-button" onClick="LandHome();"> Home </button>
+                        <button class="side-button" onClick="LandHillwalking();"> Hill Walking </button>
+                    </div>
+
+                    <div class="text">
+                        <h4> Activities </h4>
+                        <h1 id="heading"> Land </h1>
+                        <br>
+
+                        <p id="content"> Visitors can take part in a wide range of land-based activities on and off site. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
