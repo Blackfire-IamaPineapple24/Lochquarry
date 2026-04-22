@@ -36,6 +36,7 @@ img
 {
     user-select: none;
     pointer-events: none;
+    border-radius: 9px;
 }
 /* #endregion */
 
