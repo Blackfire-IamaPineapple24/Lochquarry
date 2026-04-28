@@ -1,7 +1,7 @@
 /* #region BUILTIN */
 body
 {
-    background-image: url("/resources/images/background.webp");
+    background-image: url("images/background.webp");
     background-size: cover;
     background-attachment: fixed;
     margin: 0%;
@@ -156,6 +156,12 @@ img
     width: 150px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-right: 20px;
+}
+
+.dummy
+{
+    /* This class is to disable the map image on other pages, bugfix for the light/dark mode toggle being broken. */
+    display: none;
 }
 /* #endregion */
 
